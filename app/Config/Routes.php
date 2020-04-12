@@ -34,7 +34,14 @@ $routes->get('/', 'Home::index');
 $routes->post('/tambah','Home::store');
 $routes->get('/parser','Home::create');
 $routes->get('/about','About::index');
+// mahsiswa crud
 $routes->get('/mahasiswa','Mahasiswa::index');
+$routes->get('/mahasiswa/detail/(:segment)','Mahasiswa::detail/$1');
+$routes->delete('/mahasiswa/delete/(:segment)','Mahasiswa::delete/$1');
+$routes->get('/mahasiswa/create','Mahasiswa::create');
+$routes->post('/mahasiswa/store','Mahasiswa::store');
+$routes->get('/mahasiswa/update/(:segment)','Mahasiswa::edit/$1');
+$routes->post('/mahasiswa/edit','Mahasiswa::update');
 
 /**
  * --------------------------------------------------------------------

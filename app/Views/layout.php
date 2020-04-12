@@ -36,7 +36,7 @@
 </nav>
       <div class="container">
       <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
       <?= $this->renderSection('content') ?>
       </div>
       </div>
